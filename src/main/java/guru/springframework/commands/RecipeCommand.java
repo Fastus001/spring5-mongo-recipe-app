@@ -24,7 +24,6 @@ import java.util.Set;
 public class RecipeCommand {
     private String id;
 
-    @NotBlank
     @Size(min = 3, max = 255)
     private String description;
 
@@ -44,7 +43,6 @@ public class RecipeCommand {
     @URL
     private String url;
 
-    @NotBlank
     private String directions;
 
     private List<IngredientCommand> ingredients = new ArrayList<>();
